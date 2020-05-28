@@ -13,7 +13,7 @@ Cola.prototype.dequeue = function() {
         _nvdt = this._nvdt,
         deletedData;
 
-    if (_ultdt !== _nvdt) {
+    if (_ultdt !== _nvdt) { //que no se tenga el mismo valor en las variables
         deletedData = this._storage[_ultdt]
         delete this._storage[_ultdt];
         this._ultdt++;

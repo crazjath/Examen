@@ -1,6 +1,6 @@
 function Pila() {
     this._size = 0;
-    this._storage = {};
+    this._storage = [];
 }
 Pila.prototype.push = function(elemento) {
     var size = this._size++;
