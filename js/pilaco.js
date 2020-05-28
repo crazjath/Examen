@@ -1,7 +1,9 @@
 function Pila() {
     this._size = 0;
     this._storage = [];
+
 }
+
 Pila.prototype.push = function(elemento) {
     var size = this._size++;
 
@@ -11,21 +13,16 @@ Pila.prototype.push = function(elemento) {
 }
 
 Pila.prototype.pop = function() {
-    var size = this._size, //tamaño de la pila
-        deletedData; //asigna datos
+    var size = this._size; //tamaño de la pila
 
     if (size) { //no se llega numeros negativos por la ejecucion si llega a haber datos
-        deletedData = this._storage[this._size];
+        let a = this._storage[this._size - 1];
 
         delete this._storage[this._size - 1];
         this._size--; //disminuir el tamaño
 
-
-
-        return deletedData;
+        return a;
     }
-
-    console.log(this._storage[this._size]);
 
 }
 Pila.prototype.peek = function() {
