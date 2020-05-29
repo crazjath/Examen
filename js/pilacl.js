@@ -3,8 +3,6 @@ class Pila {
         this.pila = [];
     }
 
-
-
     push(elemento) {
         this.pila.push(elemento);
         return this.pila;

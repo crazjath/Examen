@@ -7,6 +7,8 @@ function Cola() {
 Cola.prototype.enqueue = function(elemento) {
     this._storage[this._nvdt] = elemento;
     this._nvdt++;
+
+    return elemento;
 };
 Cola.prototype.dequeue = function() {
     var _ultdt = this._ultdt,
@@ -20,6 +22,7 @@ Cola.prototype.dequeue = function() {
 
         return deletedData;
     }
+    return deletedData;
 };
 Cola.prototype.peek = function() {
     return this._ultdt;
